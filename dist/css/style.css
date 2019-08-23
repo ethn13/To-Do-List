@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani|Raleway|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    /*background-image: repeating-linear-gradient(
+        -45deg,
+        #fff, 
+        #fff 15px, 
+        #000 15px, 
+        #000 30px
+    )*/
+}
+
+header {
+    background: #132448;
+    box-shadow: 4px 2px 10px 0px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.flex-row__start {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.flex-row__center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    text-align:center;
+}
+
+.clock {
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    font-family: 'Orbitron', 'Open Sans', sans-serif;
+    color: #DCDCDC;
+    position: absolute;
+    right: 0;
+}
+
+.title {
+    font-family: 'Rajdhani', sans-serif;
+    color: #fff;
+    padding:2rem 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(100vh, auto);
+    grid-template-areas: 
+    "to-do doing done";
+}
+
+.to-do,
+.doing,
+.done {
+    min-height: 50vh;
+}
+
+.to-do h1,
+.done h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background: #3462c4;
+    color: #fff;
+}
+
+.doing h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background: #007a81;
+    color: #fff;
+}
+
+.doing {
+    background: #F9F5F3;
+}
+
+.add-item {
+    align-self: center;
+    cursor: pointer;
+}
+
+.add-item:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
+}
+
+.fa-plus-circle {
+    color: #fff;
+}
+
+.input-form {
+    background: #132448;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -200px;
+    width: 400px;
+    height: 200px;
+    padding: 2rem;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    transform: scale(0);
+    transition: all 0.5s ease-in-out;
+    z-index: 2000;
+}
+
+.input-form__close {
+    float: right;
+    margin-top: -1rem;
+}
+
+.input-form__close i,
+.input-form__submit i {
+    color: #fff;
+}
+
+.input-form__submit {
+    float: right;
+    margin-bottom: -2rem;
+}
+
+.btn-tiny {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-tiny:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-out; 
+}
+
+.to-do__item,
+.doing__item,
+.done__item {
+    padding: 2rem;
+    font-family: 'Noto Sans TC', 'Open Sans', sans-serif;
+    margin-top: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.to-do__item:hover,
+.done__item:hover {
+    background: #bbcbed;
+    transform: translateY(-5px);
+    transition: all 0.15s ease-in-out;
+}
+
+.doing__item:hover {
+    background: #bbeddd;
+    transform: translateY(-5px);
+    transition: all 0.15s ease-in-out;
+}
+
+.to-do__item-content,
+.doing__item-content,
+.done__item-content {
+    margin-right: 2rem;
+}
+
+.to-do__item-btns,
+.doing__item-btns,
+.done__item-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.doing__item-btns button {
+    margin-bottom: 0.4rem;
+}
+
+.remove-to-do__item i,
+.remove-doing__item i {
+    color: #ff2727;
+    transform: scale(1.5);
+}
+
+.finish-done__item i {
+    transform: scale(1.5);
+    color: #132448;
+}
+
+.next-to-do__item i,
+.next-doing__item i {
+    transform: scale(1.5);
+    color:#23c3ba;
+}
+
+.prev-doing__item i,
+.prev-done__item i {
+    transform: scale(1.5);
+    color: #6262ff;
+}

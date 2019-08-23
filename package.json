@@ -1,0 +1,23 @@
+{
+  "name": "to-do__list",
+  "version": "1.0.0",
+  "description": "To do list",
+  "private": true,
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "author": "Ethan Chiu",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "uniqid": "^5.0.3"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0"
+  }
+}

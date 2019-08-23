@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani|Raleway|Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    /*background-image: repeating-linear-gradient(
+        -45deg,
+        #fff, 
+        #fff 15px, 
+        #000 15px, 
+        #000 30px
+    )*/
+}
+
+header {
+    background: #132448;
+    box-shadow: 4px 2px 10px 0px rgba(0,0,0,0.3);
+}
+
+.flex-row__start {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.flex-row__center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    text-align:center;
+}
+
+.title {
+    font-family: 'Rajdhani', sans-serif;
+    color: #fff;
+    padding:2rem 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(35rem, auto);
+    grid-template-areas: 
+    "content content content"
+    "to-do doing done";
+}
+
+.to-do,
+.doing,
+.done {
+    min-height: 50vh;
+}
+
+.doing {
+    background: #F9F5F3;
+}
+
+.add__item i {
+    background-color: #fff;
+}

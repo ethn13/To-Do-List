@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/icon" href="img/logo-light.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo-light.png" alt="" width="100">
+        </div>
+        <div class="title">
+            <h1>To Do List</h1>
+        </div>
+        <a class="add-item">
+            <i class="fa fa-plus-circle fa-2x"></i>
+        </a>
+        <div class="clock">8:00:05</div>
+    </header>
+    <!--TO DO ITEM INPUT-->
+    <form class="input-form" onsubmit="return false">
+        <button class="input-form__close btn-tiny" type="button">
+            <i class="fas fa-times-circle fa-2x"></i>
+        </button>
+        Title:<br>
+         <input type="text" class="input-form__title"><br><br>
+        Description:<br>
+         <textarea rows="4" cols="30" class="input-form__description"></textarea>
+         <button class="input-form__submit btn-tiny" type="submit">
+            <i class="fas fa-paper-plane fa-2x"></i>
+         </button>
+    </form>
+    <!--CONTENT-->
+    <div class="container">
+        <div class="to-do">
+            <h1>To Do</h1>
+            <ul class="to-do__list">
+                <!--
+                <li class="to-do__item" data-id="%id%">
+                    <div class="to-do__item-content">
+                        <h3>生化作業</h3>
+                        <p>完成作業page5~page7</p>
+                    </div>
+                    <div class="to-do__item-btns">
+                        <button class="btn-tiny remove-to-do__item">
+                            <i class="fas fa-times-circle"></i>
+                        </button>
+                        <button class="btn-tiny next-to-do__item">
+                            <i class="fas fa-chevron-circle-right"></i>
+                        </button>
+                    </div>
+                </li>
+                -->
+            </ul>
+        </div>
+        <div class="doing">
+            <h1>Doing</h1>
+            <ul class="doing__list">
+                <!--
+                <li class="doing__item" data-id="%id%">
+                    <div class="doing__item-content">
+                        <h3>生化作業</h3>
+                        <p>完成作業page5~page7</p>
+                    </div>
+                    <div class="doing__item-btns">
+                        <button class="btn-tiny remove-doing__item">
+                            <i class="fas fa-times-circle"></i>
+                        </button>
+                        <button class="btn-tiny prev-doing__item">
+                            <i class="fas fa-chevron-circle-left"></i>
+                        </button>
+                        <button class="btn-tiny next-doing__item">
+                            <i class="fas fa-chevron-circle-right"></i>
+                        </button>
+                    </div>
+                </li> 
+                -->
+            </ul>
+        </div>
+        <div class="done">
+            <h1>Done</h1>
+            <ul class="done__list">
+                <!--
+                <li class="done__item" data-id="%id%">
+                    <div class="done__item-content">
+                        <h3>生化作業</h3>
+                        <p>完成作業page5~page7</p>
+                    </div>
+                    <div class="done__item-btns">
+                        <button class="btn-tiny finish-done__item">
+                            <i class="fas fa-check-circle"></i>
+                        </button>
+                        <button class="btn-tiny prev-done__item">
+                            <i class="fas fa-chevron-circle-left"></i>
+                        </button>
+                    </div>
+                </li> 
+                -->
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="js/bundle.js"></script>
+</body>
+</html>
